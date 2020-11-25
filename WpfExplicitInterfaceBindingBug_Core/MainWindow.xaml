@@ -16,6 +16,16 @@
             <TextBlock
                 Width="250"
                 FontWeight="Bold"
+                Text="0: DataAsInterface.OnlyOnInterface" />
+            <TextBlock Margin="10,0" Text="{Binding DataAsInterface.OnlyOnInterface}" />
+        </StackPanel>
+
+        <Separator Margin="10" />
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock
+                Width="250"
+                FontWeight="Bold"
                 Text="1: DataAsInterface.Name" />
             <TextBlock Margin="10,0" Text="{Binding DataAsInterface.Name}" />
         </StackPanel>
@@ -78,7 +88,7 @@
             <TextBlock
                 Width="250"
                 FontWeight="Bold"
-                Text="8: C# - ((IData)DataAsClass).Name" />
+                Text="9: C# - ((IData)DataAsClass).Name" />
             <TextBlock Margin="10,0" Text="{Binding CSharpCastClassName}" />
         </StackPanel>
     </StackPanel>

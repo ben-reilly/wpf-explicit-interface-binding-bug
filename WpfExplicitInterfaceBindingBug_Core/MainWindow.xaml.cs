@@ -18,11 +18,14 @@ namespace WpfExplicitInterfaceBindingBug_Core
     public interface IData
     {
         public string Name { get; }
+        public string OnlyOnInterface { get; }
     }
 
     public class Data : IData
     {
         string IData.Name { get; } = "Interface Property";
+        string IData.OnlyOnInterface { get; } = "Interface-Only Property";
+
         public string Name { get; } = "Class Property";
 
         // Including an additional property so that it's clear in the XAML editor which type it
